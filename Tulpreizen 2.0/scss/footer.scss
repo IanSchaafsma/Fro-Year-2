@@ -1,0 +1,27 @@
+@use 'components';
+@use 'colors';
+
+.socials{
+    @extend %section;
+    background: darken(colors.$blue, 2%);
+}
+
+.socials__list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-bottom: 4rem;
+}
+
+.socials__listItem{
+    color: colors.$font-color;
+    list-style: none;
+    font-size: 300%;
+}
+
+.socials__listItem:hover{
+    cursor: pointer;
+    color: colors.$pink;
+}
