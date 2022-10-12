@@ -1,0 +1,26 @@
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin rotate($duration: 0.8s){
+    transform: rotate(360deg);
+    transition: $duration all;
+   
+}
+
+@mixin fontsansSerif{
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin fontmonoSpace{
+    font-weight: 400;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+@mixin fontCursive{
+    font-weight: 400;
+    font-family: 'Silkscreen', cursive;
+}

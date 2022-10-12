@@ -1,0 +1,74 @@
+@use "../../abstract/mixins";
+@use "../../abstract/colors";
+@use "../../abstract/animations";
+
+.showcase{
+    width: 80vw;
+    max-width: 150rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 4rem;
+    background: colors.$background;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: inset 0 -1rem 2rem 0 colors.$lightBlue-shadow;
+    @include animations.popup;
+}
+
+.dark{
+    background: #33304E;
+    color: #FBF8F1;
+}
+
+.darkGradient{
+    background: linear-gradient(to bottom right, #a770ef, 40% ,#cf8bf3, 90% ,#fdb99b);
+}
+
+.showcase__input{
+    padding-left: 0;
+    font-size: 100%;
+    padding: 2rem;
+    max-width: 50%;
+    border: none;
+    background: none;
+    border-bottom: 0.2rem solid colors.$lightBlue;
+}
+
+.showcase__input:focus{
+    outline: none;
+}
+
+.showcase__section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.showcase__wrapper{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.showcase__font{
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.showcase__output{
+    font-size: 250%;
+}
+
+.showcase__output--cursive{
+    @include mixins.fontCursive;
+}
+
+.showcase__output--sansSerif{
+    @include mixins.fontsansSerif;
+}
+
+.showcase__output--monoSpace{
+    @include mixins.fontmonoSpace
+}

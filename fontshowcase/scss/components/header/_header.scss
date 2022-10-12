@@ -1,0 +1,57 @@
+@use "../../abstract/mixins";
+@use "../../abstract/colors";
+@use "../../abstract/animations";
+
+.header{
+    width: 80vw;
+    max-width: 150rem;
+    min-height: 15rem;
+    @include mixins.flexCenter;
+    justify-content: space-between;
+    background: colors.$background;
+    padding: 4rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    @include animations.popup;
+
+
+    &__logo{
+        font-size: 200%;
+        border-radius: 50%;
+        color: colors.$background;
+        border: 0.2rem dashed colors.$lightBlue;
+        background: colors.$gradient;
+        width: 8rem;
+        height: 8rem;
+        @include mixins.flexCenter; 
+        &:hover{
+            color: colors.$lightBlue;
+            border: 0.2rem dashed colors.$lightBlue;
+            background: transparent;
+            @include mixins.rotate(0.95s);
+            transition-timing-function: cubic-bezier(0.8, -0.85, 1, 1);
+        }
+    }
+
+    &__rightWrapper{
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    &__avatar{
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        &:hover{
+            @include mixins.rotate;
+        }
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

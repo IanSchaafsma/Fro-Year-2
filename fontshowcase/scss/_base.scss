@@ -1,0 +1,27 @@
+@use "./abstract/mixins";
+@use "./abstract/colors";
+
+*:focus{
+    outline: 0.2rem dashed colors.$outline !important;
+}
+
+:root{
+    --background: colors.$background;
+    --background-dark: "black";
+    --lightBlue: colors.$lightblue;
+    --lightBlue-shadow: colors.$lightblue-shadow;
+    --fontColor: colors.$fontColor;
+    --fontColor-dark: colors.$fontColor--dark;
+    --gradient: colors.$gradient;
+    --gradient-dark: colors.$gradient-darkmode;
+}
+body{
+    background: colors.$gradient;
+    @include mixins.flexCenter;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
