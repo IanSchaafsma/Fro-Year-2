@@ -1,0 +1,113 @@
+@use "./../abstracts/variables";
+
+.tasks{
+    background: map-get(variables.$tasksVars, "background");
+    width: 35rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    overflow-y: scroll;
+
+        &--hidden{
+            display: none;
+        }
+
+        &__header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        &__headerWrapper{
+            display: flex;
+            gap: 1rem;
+            align-items: flex-end;
+        }
+
+        &__h2{
+            font-size: 100%;
+            font-weight: 700;
+        }
+
+        &__number{
+            background: map-get(variables.$tasksVars, "numberColor");
+            font-size: 90%;
+            padding: 0.5rem;
+            font-weight: 500;
+            color: map-get(variables.$tasksVars, "specialFontColor");
+            border-radius: 0.3rem;
+        }
+
+        &__edit{
+            border: none;
+            background: none;
+            font-size: 120%;
+            font-family: map-get(variables.$fontVars, "font");
+            line-height: 1;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        &__list{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        &__listItem{
+            background: map-get(variables.$tasksVars, "listItemColor");
+            font-size: 90%;
+            padding: 0.5rem;
+            border-radius: 0.3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            box-shadow: 0 0.3rem 0 0 darken(map-get(variables.$tasksVars, "listItemColor"), 15%);
+        }
+
+        &__author{
+            align-self: flex-end;
+            padding: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: map-get(variables.$labelVars, "weekend");
+            color: map-get(variables.$tasksVars, "specialFontColor");
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            font-weight: 500;
+        }
+
+        &__label{
+            background: map-get(variables.$labelVars, "default");
+            width: max-content;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.3rem;
+            color: map-get(variables.$tasksVars, "specialFontColor");
+            font-size: 90%;
+
+            &--tomorrow{
+                background: map-get(variables.$labelVars, "tomorrow"); 
+            }
+            
+            &--weekend{
+                background: map-get(variables.$labelVars, "weekend");
+            }
+
+            &--nextWeek{
+                background: map-get(variables.$labelVars, "nextWeek");
+            }
+
+            &--sometime{
+                background: map-get(variables.$labelVars, "sometime");
+            }
+
+
+        }
+}
+

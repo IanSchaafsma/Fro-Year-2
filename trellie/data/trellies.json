@@ -1,0 +1,34 @@
+{
+    "title": "Hij doet het :D",
+    "activitiesCount": 5,
+    "activities": [
+        {
+            "description": "Trellie afmaken",
+            "label": "Vandaag",
+            "extraClass": "",
+            "author": "IS"
+        },
+        {
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, voluptas? Exercitationem architecto commodi, eveniet sed dolor pariatur neque dolorem deserunt error quia molestias rerum nisi in dignissimos facere repudiandae recusandae? ",
+            "label": "Morgen",
+            "extraClass": "tomorrow",
+            "author": ""
+        },{
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, voluptas? Exercitationem architecto commodi, eveniet sed dolor pariatur neque dolorem deserunt error quia molestias rerum nisi in dignissimos facere repudiandae recusandae? ",
+            "label": "Weekend",
+            "extraClass": "weekend",
+            "author": ""
+        },{
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, voluptas? Exercitationem architecto commodi, eveniet sed dolor pariatur neque dolorem deserunt error quia molestias rerum nisi in dignissimos facere repudiandae recusandae? ",
+            "label": "Volgende week",
+            "extraClass": "nextWeek",
+            "author": "JR"
+        },{
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, voluptas? Exercitationem architecto commodi, eveniet sed dolor pariatur neque dolorem deserunt error quia molestias rerum nisi in dignissimos facere repudiandae recusandae? ",
+            "label": "Ooit",
+            "extraClass": "sometime",
+            "author": ""
+        }
+
+    ]
+}

@@ -1,0 +1,69 @@
+@use "../abstract/mixins";
+
+.header{
+    width: 100vw;
+    height: 7.2rem;
+    background: white;
+    box-shadow:  0 0.1rem 0.8rem 0rem rgba(63, 63, 63, 0.35);
+    @include mixins.flexCenter;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    padding-right: 4rem;
+}
+
+.header__figure{
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+    @include mixins.flexCenter;
+}
+
+.header__logo{
+    height: 100%;
+    width: 100%;
+}
+
+.header__span{
+    font-size: 1.3rem;
+}
+
+.header__searchBar{
+    width: 73rem;
+    height: 4.6rem;
+    @include mixins.flexCenter;
+    justify-content: flex-start;
+    background: white;
+    border: 0.1rem solid black;
+    border-radius: 5rem;
+}
+
+.header__icon{
+    font-size: 1.75;
+    color: black;
+    padding-left: 1.6rem;
+}
+
+.header__input{
+    all: unset;
+    padding: 0 2.4rem 0 2.4rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.header__a{
+    all: unset;
+    font-size: 1.6rem;
+    border: 0.1rem solid black;
+    padding: 1rem 1.6rem 1rem 1.6rem;
+    margin: -1rem;
+}
+
+.header__a--sign{
+    background: black;
+    color: white;
+}
+
+.header__a--globe{
+    padding: 1rem 1rem 1rem 1rem;
+
+}

@@ -1,0 +1,46 @@
+.banner{
+    z-index: -1;
+    position: relative;
+    width: 94%;
+    height: 40rem;
+    background-image: url("../../img/banner.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.banner__img{
+}
+
+.banner__card{
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    background: white;
+    padding: 3rem;
+    box-shadow:  0 0.1rem 0.8rem 0rem rgba(63, 63, 63, 0.35);
+}
+
+.banner__h3{
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.banner__p{
+    font-size: 1.7rem;
+}
+
+.banner__arrow{
+    border: none;
+    background: #393b3f;
+    color: #EEE;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

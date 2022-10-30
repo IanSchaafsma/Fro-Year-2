@@ -1,0 +1,10 @@
+@use "./abstract/mixins";
+
+body{
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.main{
+    @include mixins.flexCenter;
+}

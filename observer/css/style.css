@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* 1rem === 10px */
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  background: linear-gradient(#FFABE1, 70%, #937DC2);
+  padding: 4rem;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+.numbersCard {
+  width: 40rem;
+  height: 30rem;
+  border-radius: 1rem;
+  background: #eee;
+  box-shadow: inset 0 0 1rem 0.5rem rgba(255, 171, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.numbersCard__h2 {
+  font-size: 200%;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
