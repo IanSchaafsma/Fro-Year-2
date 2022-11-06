@@ -1,4 +1,81 @@
 .main{
     padding-left: 6rem;
     padding-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.skills{
+    background: rgb(241, 241, 241);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    
+
+    &__skill{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    &__skillIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background: rgb(211, 211, 211);
+        border-radius: 5rem;
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.8rem;
+    }
+
+    &__skillText{
+        color: black;
+        font-size: 1.6rem;
+    }
+
+    
+}
+
+.viewing{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__h2{
+        font-size: 120%;
+    }
+}
+
+.trusted{
+
+    &__h3{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__p{
+        text-align: center;
+        font-size: 80%;
+        margin-bottom: 2rem;
+    }
+
+    &__companies{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 13rem;
+        padding-right: 13rem;
+    }
+
+    &__company{
+
+    }
 }

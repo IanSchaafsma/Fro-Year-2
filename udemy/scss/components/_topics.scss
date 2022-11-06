@@ -1,0 +1,48 @@
+.topics{
+    background: #f7f9fa; /* #f7f9fa */
+    width: 100vw;
+    height: 50rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
+    gap: 2rem;
+
+
+    &__h2{
+        font-size: 120%;
+    }
+
+    &__list{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 18rem;
+    }
+
+    &__listItem{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__h4{
+    }
+
+    &__listItemWrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    &__link{
+        font-size: 90%;
+    }
+
+    &__p{
+        font-size: 80%;
+    }
+}
