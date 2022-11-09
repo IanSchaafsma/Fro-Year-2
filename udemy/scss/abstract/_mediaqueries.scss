@@ -1,0 +1,130 @@
+@media screen and (max-width: 50rem){
+    .main{
+        padding-left: 0rem;
+        padding-right: 0rem;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+    
+    .header__searchBar{
+        display: none;
+    }
+
+    .header__span{
+        display: none;
+    }
+
+    .header__a{
+        display: none;
+    }
+
+    .header{
+        justify-content: space-around;
+    }
+
+    .header__bars{
+        display: flex;
+    }
+
+    .selection__listItem:nth-child(-n+2){
+        display: none;
+    }    
+
+    .topics{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 2rem;
+    }
+
+    .topics__list{
+        gap: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 37.5rem) {
+    .banner__card{
+        display: none;
+    }
+
+    .selection__exploreH2{
+        display: none;
+    }
+
+    .selection__exploreP{
+        display: none;
+    }
+
+    .selection__exploreButton{
+       display: none;
+    }
+
+    .skills{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selection__listItem:nth-child(-n+3){
+        display: none;
+    } 
+
+    .topics{
+        height: 100%;
+    }
+
+    .topics__list{
+        flex-wrap: wrap;
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+    
+    .footer__linksWrapper{
+        flex-direction: column;
+        gap: 0rem;
+        align-items: flex-start;
+        margin-bottom: 4rem;
+    }
+    
+    
+    .footer__button{
+        margin-bottom: 3rem;
+    }
+    
+    .footer__logoCopyright{
+        position: absolute;
+        bottom: rem;
+        left: 4rem;
+    }
+    
+    .footer__logo{
+        width: 10rem;
+    
+    }
+
+    .trusted__companies{
+        flex-wrap: wrap;
+    }
+    
+    .selection__buttons{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 25rem){
+    .main{
+        font-size: 1.5rem;
+    }
+
+    .selection__listItem:nth-child(-n+4){
+        display: none;
+    } 
+
+    
+}

@@ -1,14 +1,20 @@
 @use "../abstract/mixins";
+@use "../abstract/variables";
+
 
 .header{
-    width: 100vw;
-    height: 7.2rem;
-    background: white;
-    box-shadow:  0 0.1rem 0.8rem 0rem rgba(63, 63, 63, 0.35);
+    width: 100%;
+    height: 20%;
+    background: map-get(variables.$colors, "white");
+    box-shadow:  0 0.1rem 0.8rem 0rem map-get(variables.$colors, "shadow");
     @include mixins.flexCenter;
-    justify-content: space-between;
-    padding-left: 2.5rem;
-    padding-right: 4rem;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.header__bars{
+    display: none;
+    
 }
 
 .header__figure{
@@ -19,8 +25,9 @@
 }
 
 .header__logo{
-    height: 100%;
-    width: 100%;
+    height: 10rem;
+    width: 10rem;
+    padding-left: 1rem;
 }
 
 .header__span{
@@ -32,14 +39,14 @@
     height: 4.6rem;
     @include mixins.flexCenter;
     justify-content: flex-start;
-    background: white;
-    border: 0.1rem solid black;
+    background: map-get(variables.$colors, "white");
+    border: 0.1rem solid map-get(variables.$colors, "black");
     border-radius: 5rem;
 }
 
 .header__icon{
     font-size: 1.75;
-    color: black;
+    color: map-get(variables.$colors, "black");
     padding-left: 1.6rem;
 }
 
@@ -53,14 +60,14 @@
 .header__a{
     all: unset;
     font-size: 1.6rem;
-    border: 0.1rem solid black;
+    border: 0.1rem solid map-get(variables.$colors, "black");
     padding: 1rem 1.6rem 1rem 1.6rem;
-    margin: -1rem;
+    margin: 0.5rem;
 }
 
 .header__a--sign{
-    background: black;
-    color: white;
+    background: map-get(variables.$colors, "black");
+    color: map-get(variables.$colors, "white");
 }
 
 .header__a--globe{

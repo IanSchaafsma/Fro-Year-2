@@ -25,16 +25,19 @@ body {
 }
 
 .header {
-  width: 100vw;
-  height: 7.2rem;
+  width: 100%;
+  height: 20%;
   background: white;
   box-shadow: 0 0.1rem 0.8rem 0rem rgba(63, 63, 63, 0.35);
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 2.5rem;
-  padding-right: 4rem;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.header__bars {
+  display: none;
 }
 
 .header__figure {
@@ -47,8 +50,9 @@ body {
 }
 
 .header__logo {
-  height: 100%;
-  width: 100%;
+  height: 10rem;
+  width: 10rem;
+  padding-left: 1rem;
 }
 
 .header__span {
@@ -85,7 +89,7 @@ body {
   font-size: 1.6rem;
   border: 0.1rem solid black;
   padding: 1rem 1.6rem 1rem 1.6rem;
-  margin: -1rem;
+  margin: 0.5rem;
 }
 
 .header__a--sign {
@@ -126,7 +130,7 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  background: rgb(211, 211, 211);
+  background: rgb(212, 212, 212);
   border-radius: 5rem;
   width: 4rem;
   height: 4rem;
@@ -167,9 +171,10 @@ body {
   position: relative;
   width: 100%;
   height: 40rem;
-  background-image: url("../../img/banner.jpg");
+  background-image: url("../../img/banner.webp");
   display: flex;
   background-repeat: no-repeat;
+  background-position: center;
   align-items: center;
   justify-content: space-between;
   background-size: cover;
@@ -197,7 +202,7 @@ body {
 .banner__arrow {
   border: none;
   background: #393b3f;
-  color: #EEE;
+  color: white;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -264,11 +269,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
+  height: 30rem;
 }
 .selection__listImg {
   border: 0.1rem solid rgb(186, 186, 186);
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .selection__listTitle {
   font-size: 1.6rem;
@@ -292,7 +301,6 @@ body {
 }
 .selection__listPriceBefore {
   font-size: 1.4rem;
-  color: rgb(124, 124, 124);
 }
 
 .topCategories {
@@ -437,6 +445,7 @@ body {
   align-items: center;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
 }
 
 .footer__linksWrapper {
@@ -468,17 +477,114 @@ body {
 }
 
 .footer__logoCopyright {
-  width: 100vw;
-  height: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 4rem;
 }
 
 .footer__logo {
-  max-width: 100%;
-  height: 50%;
-  align-items: flex-start;
+  width: 10rem;
+}
+
+@media screen and (max-width: 50rem) {
+  .main {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+  .header__searchBar {
+    display: none;
+  }
+  .header__span {
+    display: none;
+  }
+  .header__a {
+    display: none;
+  }
+  .header {
+    justify-content: space-around;
+  }
+  .header__bars {
+    display: flex;
+  }
+  .selection__listItem:nth-child(-n+2) {
+    display: none;
+  }
+  .topics {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 2rem;
+  }
+  .topics__list {
+    gap: 3rem;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .banner__card {
+    display: none;
+  }
+  .selection__exploreH2 {
+    display: none;
+  }
+  .selection__exploreP {
+    display: none;
+  }
+  .selection__exploreButton {
+    display: none;
+  }
+  .skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .selection__listItem:nth-child(-n+3) {
+    display: none;
+  }
+  .topics {
+    height: 100%;
+  }
+  .topics__list {
+    flex-wrap: wrap;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .footer__linksWrapper {
+    flex-direction: column;
+    gap: 0rem;
+    align-items: flex-start;
+    margin-bottom: 4rem;
+  }
+  .footer__button {
+    margin-bottom: 3rem;
+  }
+  .footer__logoCopyright {
+    position: absolute;
+    bottom: rem;
+    left: 4rem;
+  }
+  .footer__logo {
+    width: 10rem;
+  }
+  .trusted__companies {
+    flex-wrap: wrap;
+  }
+  .selection__buttons {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .main {
+    font-size: 1.5rem;
+  }
+  .selection__listItem:nth-child(-n+4) {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

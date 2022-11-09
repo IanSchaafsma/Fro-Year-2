@@ -1,5 +1,7 @@
+@use "../abstract/variables";
+
 .topics{
-    background: #f7f9fa; /* #f7f9fa */
+    background: map-get(variables.$colors, "whiteVar"); /* #f7f9fa */
     width: 100vw;
     height: 50rem;
     display: flex;

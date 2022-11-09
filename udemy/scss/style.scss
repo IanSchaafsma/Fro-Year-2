@@ -1,6 +1,6 @@
 @use "reset";
 @use "base";
-@use "./abstract/colors";
+@use "./abstract/variables";
 @use "./abstract/_mixins";
 @use "./components/header";
 @use "./components/main";
@@ -10,3 +10,4 @@
 @use "./components/topics";
 @use "./components/business";
 @use "./components/footer";
+@use "./abstract/mediaqueries";

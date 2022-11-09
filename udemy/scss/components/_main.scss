@@ -1,3 +1,5 @@
+@use "../abstract/variables";
+
 .main{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -7,7 +9,7 @@
 }
 
 .skills{
-    background: rgb(241, 241, 241);
+    background: map-get(variables.$colors, "whiteGray");
     width: 100vw;
     display: flex;
     align-items: center;
@@ -28,8 +30,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: black;
-        background: rgb(211, 211, 211);
+        color: map-get(variables.$colors, "black");
+        background: map-get(variables.$colors, "whiteBorder");
         border-radius: 5rem;
         width: 4rem;
         height: 4rem;
@@ -37,7 +39,7 @@
     }
 
     &__skillText{
-        color: black;
+        color: map-get(variables.$colors, "black");
         font-size: 1.6rem;
     }
 
